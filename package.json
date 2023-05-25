@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "cypress": "^12.11.0"
+    "cypress": "^12.12.0"
   },
   "name": "testefront",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "<h1 align='center'>Teste do Frontend Projeto C317</h1>\r <p align=\"left\">Repositírio destinado ao testes de frontend, feito em Cypress, casos de testes e geração de relatório dos testes realizados</p>",
+  "devDependencies": {}
 }
