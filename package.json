@@ -10,5 +10,8 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "<h1 align='center'>Teste do Frontend Projeto C317</h1>\r <p align=\"left\">Repositírio destinado ao testes de frontend, feito em Cypress, casos de testes e geração de relatório dos testes realizados</p>"
+  "description": "<h1 align='center'>Teste do Frontend Projeto C317</h1>\r <p align=\"left\">Repositírio destinado ao testes de frontend, feito em Cypress, casos de testes e geração de relatório dos testes realizados</p>",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.5.1"
+  }
 }
