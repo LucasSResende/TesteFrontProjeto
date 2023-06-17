@@ -63,7 +63,7 @@ describe("Criar um 'New Entry'", () => {
     cy.wait(1000);
     cy.get('[routerlink="/entry"]').click();
     cy.get(".newEntryButton > .mdc-button__label > span").click();
-    cy.get("#mat-input-0").type("Viagem litoral");
+    cy.get("#mat-input-0").type("Beach time");
     cy.get("#mat-input-1").type("07/10/2023");
     cy.get("#mat-input-2").type("3280,00");
     cy.get("svg.ng-tns-c55-6 > .ng-tns-c55-6").click();
@@ -81,6 +81,7 @@ describe("Teste na tela de tipos de entradas", () => {
       ":nth-child(1) > .cdk-column-action > .delete > .material-icons"
     ).click();
     cy.get(".confirmButton > .mdc-button__label > span").click();
+    cy.wait(1000);
 
     cy.wrap(login());
     cy.get('[routerlink="/type"]').click();
@@ -144,7 +145,9 @@ describe("Edição de 'Types'", () => {
     cy.get(
       ":nth-child(2) > .cdk-column-action > .edit > .material-icons"
     ).click();
+    cy.wait(1000);
     cy.get("#mat-input-1").clear();
+    cy.wait(1000);
     cy.get("#mat-input-1").type("22");
     cy.get(".confirm-button > .mdc-button__label > span").click();
     cy.wrap(login());
@@ -210,7 +213,9 @@ describe("Teste tela 'Types'", () => {
     ).should("have.text", "teste");
     cy.wait(1000);
     cy.get('[routerlink="/type"]').click();
-    cy.get(":nth-child(2) > .cdk-column-portion").should("have.text", "39%");
+    cy.get(
+      ".mdc-data-table__content > :nth-child(2) > .cdk-column-portion"
+    ).should("have.text", "39%");
   });
 });
 
